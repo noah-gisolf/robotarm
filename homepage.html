@@ -1,0 +1,25 @@
+<!DOCKTYPE html>
+<html>
+    <body>
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <script src="robot-arm.js"></script>
+        <script>
+            // Initialize the robot arm
+            var canvas = document.getElementById("canvas");
+            var robotArm = new RobotArm(canvas);
+
+            // Either use loadLevel or randomLevel to create a start scene
+            robotArm.loadLevel("exercise 1");
+
+            // My instructions come here
+
+
+
+            // Call run to run the animations
+            robotArm.run();
+
+        </script>
+        <h3>Antwoorden in console.</h3>
+        <p>robotArm.solve3() robotArm.solve6() robotArm.solve9() robotArm.solve11()</p>
+    </body>
+</html>
